@@ -1,4 +1,3 @@
-# General variables
 variable "name" {
   default = "aws-ecs-poc"
 }
@@ -17,7 +16,6 @@ variable "ami" {
   }
 }
 
-# ECS Cluster
 variable "instance_type" {
   default = "t2.micro"
 }
@@ -33,8 +31,6 @@ variable "desired_instances" {
 variable "lb_port" {
   default = 80
 }
-
-# Task definintion
 
 variable "host_port" {
   default = 0
